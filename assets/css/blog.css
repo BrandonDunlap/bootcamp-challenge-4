@@ -1,0 +1,68 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#blogTitle {
+    font-size: 24px; /* Adjust text size as needed */
+    /* Additional styling for the title */
+}
+
+.navButtons {
+    display: flex;
+}
+
+#backButton, #themeToggle {
+    margin-left: 10px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+    margin: 20px;
+}
+
+.blog-post {
+    border: 2px solid #ccc; /* Thicker border */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between posts */
+    background-color: white;
+}
+
+.blog-post h2, .blog-post p, .blog-post small {
+    font-size: 1.2em; /* Larger text size */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark background for the whole page */
+    color: white; /* Light text color for readability */
+}
+
+body.dark-mode .blog-post {
+    background-color: #444; /* Dark background for each blog post */
+    border-color: white; /* Light border for visibility */
+}
+
+body.dark-mode #blogTitle {
+    color: white; /* Ensuring the title is visible in dark mode */
+}
+
+body.dark-mode .navButtons button {
+    color: white; /* Light button text color */
+    border-color: white; /* Light border for buttons */
+}
+
+/* Footer in dark mode */
+body.dark-mode footer {
+    color: white; /* Ensuring the footer text is visible in dark mode */
+}
