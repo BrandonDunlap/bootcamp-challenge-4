@@ -4,11 +4,13 @@ The purpose of this code is to provide the user with a form that they can fill o
 
 ## Screenshots
 
-*Insert screenshots here*
+![form](assets\images\form.png)
+![blog](assets\images\blog.png)
+
 
 ## Link to Deployed Application
 
-*Insert link here*
+[https://brandondunlap.github.io/bootcamp-challenge-4/](https://brandondunlap.github.io/bootcamp-challenge-4/)
 
 ## License
 
