@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box; /* Include padding and border in an element's total width and height */
+}
+
+.navBar {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent;
+    border-bottom-color: black;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex; /* This will display children (left and right sections) in a row */
+}
+
+.leftSideNav, .rightSideNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%; /* Each takes 50% width */
+    padding: 100px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent;
+    border-top-color: black;
+}
+
+.leftSideNav {
+    border-right-color: black;
+}
+
+.rightSideNav {
+    border-left-color: black;
+}
+
+.circle {
+    background-color: red;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 400px; /* Adjusted for proper circular shape */
+    font-size: 50px;
+}
+
+.submitButton {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}
+
+.formFont, .formFont h2, .formFont p {
+    font-size: 30px; /* Larger font size for form titles and labels */
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    padding: 10px; /* Larger padding for input boxes */
+    font-size: 18px; /* Larger font size for input text */
+    width: 80%; /* Wider input boxes */
+    border: 2px solid black; /* Optional: thicker border for input boxes */
+}
+
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color for dark mode */
+}
+
+body.dark-mode .navBar,
+body.dark-mode .leftSideNav,
+body.dark-mode .rightSideNav {
+    border-color: white; /* White borders in dark mode */
+}
+
+body.dark-mode .submitButton {
+    background-color: white;
+    color: black;
+}
+
+.submitButton {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 25px; /* Larger padding */
+    font-size: 20px; /* Larger font size */
+    min-width: 100px; /* Minimum width */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
